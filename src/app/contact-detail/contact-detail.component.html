@@ -1,0 +1,10 @@
+<div class="container" style="margin-bottom: 31.5em">
+    <!-- <div *ngIf="contact"> -->
+    <div *ngFor="let contacts of contact;"> 
+      <h2>{{ contacts.name | uppercase }}</h2>
+      <br>
+      <p>
+        {{contacts.mobilenumber}}</p>
+    </div>
+    <button (click)="goBack()">Go Back</button>
+</div>

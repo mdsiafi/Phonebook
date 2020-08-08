@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+ 
+import { Contacts } from './contacts';
+import { ContactsService } from './contacts.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'contactInformation';
+  constructor(private contactsService: ContactsService) { }
+  contacts: Contacts[] = this.contactsService.getContacts();
 }

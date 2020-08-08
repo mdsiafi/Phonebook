@@ -1,0 +1,11 @@
+<ul class="list-group">
+    <li *ngFor="let contacts of contact" class="list-group-item list-group-item-info" style = "height:7em;opacity: 0.85;">
+     <div style = "width:50%;float:left;padding:5px;font-size: medium;">{{ contacts.name }}<br>
+      {{ contacts.mobilenumber }} 
+    </div>
+    <div align= "right" style = "width:50%;float:right;padding:5px;">
+      <button type="button" style="margin-right: 10px;" class="btn btn-primary align-self-end" routerLink="/detail/{{contacts.id}}">View Contact</button>
+      <button type="button" style="margin-right: 10px;" class="btn btn-danger align-self-end" (click)="deleteEmployee(contacts.id)">Delete</button>
+    </div>
+    </li>
+</ul>

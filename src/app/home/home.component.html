@@ -1,0 +1,8 @@
+<ul class="list-group">
+        <li *ngFor="let contact of contacts" class="list-group-item list-group-item-info">
+         {{ contact.name }}<br>
+          {{ contact.mobilenumber }}
+          <button type="button" class="btn btn-primary align-self-end" routerLink="/detail/{{contact.name}}">Update</button>
+          <button type="button" class="btn btn-danger align-self-end" routerLink="/detail/{{contact.name}}">Delete</button>
+        </li>
+</ul>
