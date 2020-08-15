@@ -1,0 +1,32 @@
+<div class="login-form container" *ngFor="let contacts of contact;">
+   
+    <form id="addForm" #addContactData="ngForm" (ngSubmit)="addNewContact(addContactData)">
+        <div>
+            <img src="./assets/icon.png" alt="b" class="img-responsive img-circle center" />
+        </div>
+        <br>
+        <h2 class="text-center" style="color: blue;">{{ contacts.name | uppercase }}</h2>
+        <div class="form-group">
+        <label>Name:</label>
+        <input type="text" class="form-control" name="name" id="inputtext1" placeholder="{{contacts.name}}" value="{{contacts.mobilenumber}}" ngModel>
+        </div>
+        <label>Mob Number:</label>
+        <div class="form-group">
+            <input type="text" class="form-control" name="mobilenumber" id="inputtext2" placeholder="{{contacts.mobilenumber}}" value="{{contacts.mobilenumber}}" ngModel>
+        </div>
+        <Label>Email:</Label>       
+        <div class="form-group">
+            <input type="text" class="form-control" name="email" id="inputtext3" placeholder="{{contacts.email}}" value="{{contacts.email}}" ngModel>
+        </div>
+        <Label>Relation:</Label>       
+        <div class="form-group">
+            <input type="text" class="form-control" name="relation" id="inputtext4" placeholder="{{contacts.relation}}" value="{{contacts.relation}}" ngModel>
+        </div>
+        <div class="form-group text-center">
+            <button type="submit" class="btn btn-primary">Save</button>
+        </div> 
+        <div class="form-group">
+            <button (click)="goBack()">Go Back</button>
+        </div>      
+    </form>
+  </div>  

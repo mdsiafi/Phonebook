@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Http , Response ,Headers} from '@angular/http';
 import { NgForm } from '@angular/forms';
+import {Router} from '@angular/router';
 
 
 @Component({
@@ -10,8 +11,9 @@ import { NgForm } from '@angular/forms';
 })
 export class CreatecontactsComponent implements OnInit {
   httpClient: any;
-
-  constructor(public http: Http) {
+  //router: Router;
+  constructor(public http: Http,private router: Router) {
+    
     console.log('Hello RestServiceProvider Provider');
   }
   contactObj: object={
@@ -23,6 +25,7 @@ export class CreatecontactsComponent implements OnInit {
     this.contactObj=form.value;
     this.http.post("http://localhost:3000/Contacts/",form.value).subscribe((res:Response) =>{
     });
+    this.router.navigate(["/home"]);
     }
 
    ngOnInit() {

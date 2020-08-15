@@ -1,22 +1,72 @@
-
+<div class="form-group" style="margin-left: 20px;">
+        <button routerLink="/home">Go Back</button>
+    </div>
+<div class="login-form container">
+   
+        <form id="addForm" #addContactData="ngForm" (ngSubmit)="addNewContact(addContactData)">
+            <div>
+                <img src="./assets/icon.png" alt="b" class="img-responsive img-circle center" />
+            </div>
+            <br>
+            <h2 class="text-center">+ Add Contact</h2>
+            <label>Name:</label>
+            <div class="form-group">
+                <input type="text" class="form-control" id="inputtext1" name="name" placeholder="Enter Name" value="" ngModel>
+            </div>
+            <label>Mob Number:</label>
+            <div class="form-group">
+                <input type="text" class="form-control" id="inputtext2" name="mobilenumber" value="" placeholder="Enter Mobile Number" ngModel>
+            </div>
+            <Label>Email:</Label>       
+            <div class="form-group">
+                <input type="text" class="form-control" id="inputtext3" name="email" placeholder="Enter contact email id" value="" ngModel>
+            </div>
+            <Label>Relation:</Label>       
+            <div class="form-group">
+                <input type="text" class="form-control" name="relation" value="" placeholder="Relation with the person?" ngModel>
+            </div>
+            <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </div>      
+        </form>
+      </div>
+<!-- 
 <form class="container" id="addForm" #addContactData="ngForm" (ngSubmit)="addNewContact(addContactData)" style = "width:60%;height: 29.5em;margin-bottom: 12em;border-radius: 5px;background-color: white;">
     <div data-toggle="collapse" style="width: 20%;float: left;height:100%;border-radius: 5px;background-color: black;">
     <h1 style="color: white;padding-left: 21px;">+<br>Add Contact here</h1>
     </div>
     <div style="width: 80%;float: right;;height:100%;background-color: white;padding: 10px;margin-top: 15px;">
     <div class="form-row">
-        <label for="inputtext1">Name</label>
+        <label for="inputtext1">Name:</label>
         <input type="text" class="form-control" id="inputtext1" name="name" placeholder="Enter Name" value="" ngModel>
     </div>
     <div class="form-row">
-            <label for="inputtext2">Mobile No.</label>
+            <label for="inputtext2">Mobile No:</label>
             <input type="text" class="form-control" id="inputtext2" name="mobilenumber" value="" placeholder="Enter Mobile Number" ngModel>
     </div>
-
+    <div class="form-row">
+            <label for="inputtext1">Email:</label>
+            <input type="text" class="form-control" id="inputtext3" name="email" placeholder="Enter your contact email id" value="" ngModel>
+        </div>
+        <div class="form-row">
+                <label for="inputtext2">Relation:</label>
+                <input type="text" class="form-control" id="inputtext4" name="relation" value="" placeholder="Relation with the person?" ngModel>
+        </div>
     <div class="form-group text-center">
         <button style ="width: 12em;height: 3em;margin-top: 2em;" type="submit" class="btn btn-primary">Add</button>
     </div>
     <button routerLink="/home">Go Back</button>
     </div>
-  </form>
+  </form> -->
+  <!-- <div class="container" style="margin-bottom: 31.5em">
+    <div *ngIf="contact"> -->
+    <!-- <div *ngFor="let contacts of contact;">  -->
+      <!-- <h2>{{ contacts.name | uppercase }}</h2>
+      <br>
+      <p>
+        {{contacts.mobilenumber}}</p>
+    </div>
+    <button (click)="goBack()">Go Back</button>
+</div>  -->
+      
   

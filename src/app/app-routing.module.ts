@@ -6,10 +6,12 @@ import { AddcontactComponent } from './addcontact/addcontact.component'
 import { CreatecontactsComponent } from './createcontacts.component';
 import { ListcontactsComponent } from './listcontacts.component';
 import { LoginFormComponent } from './login-form/login-form.component';
+import { EditComponent } from './edit/edit.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: LoginFormComponent },
+  { path: 'edit/:name', component: EditComponent },
   { path: 'home', component: ListcontactsComponent },
   { path: 'add', component: AddcontactComponent },
   { path: 'detail/:name', component: ContactDetailComponent },

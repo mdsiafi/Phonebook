@@ -13,7 +13,7 @@ export class ListcontactsComponent implements OnInit {
   contact: Contacts[];
   httpClient: any;
   notifyDelete: any;
-  constructor(private contactsService: ContactjsonService) { }
+  constructor(private contactsService: ContactjsonService) {  }
 
   ngOnInit() {
     this.getContacts();

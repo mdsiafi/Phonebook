@@ -1,10 +1,36 @@
-<div class="container" style="margin-bottom: 31.5em">
-    <!-- <div *ngIf="contact"> -->
-    <div *ngFor="let contacts of contact;"> 
-      <h2>{{ contacts.name | uppercase }}</h2>
+<!-- <div class="container" style="margin-bottom: 31.5em">
+    <div *ngIf="contact"> -->
+    <!-- <div *ngFor="let contacts of contact;">  -->
+      <!-- <h2>{{ contacts.name | uppercase }}</h2>
       <br>
       <p>
         {{contacts.mobilenumber}}</p>
     </div>
     <button (click)="goBack()">Go Back</button>
+</div>  -->
+ <div class="login-form container" *ngFor="let contacts of contact;">
+   
+  <form >
+      <div>
+          <img src="./assets/icon.png" alt="b" class="img-responsive img-circle center" />
+      </div>
+      <br>
+      <h2 class="text-center" style="color: blue;">{{ contacts.name | uppercase }}</h2>
+      <label>Mob Number:</label>
+      <div class="form-group">
+          <input type="text" class="form-control" name="mobile" value="{{contacts.mobilenumber}}" disabled>
+      </div>
+      <Label>Email:</Label>       
+      <div class="form-group">
+          <input type="text" class="form-control" name="email" value="{{contacts.email}}" disabled>
+      </div>
+      <Label>Relation:</Label>       
+      <div class="form-group">
+          <input type="text" class="form-control" name="relation" value="{{contacts.relation}}" disabled>
+      </div>
+      <div class="form-group">
+          <button (click)="goBack()">Go Back</button>
+      </div>      
+  </form>
 </div>
+

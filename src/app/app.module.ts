@@ -17,6 +17,7 @@ import { ContactjsonService } from './contactjson.service';
 import { FilterPipe } from './filter.pipe';
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 import { LoginFormComponent } from './login-form/login-form.component';
+import { EditComponent } from './edit/edit.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { LoginFormComponent } from './login-form/login-form.component';
     FilterPipe,
     ConfirmDialogComponent,
     LoginFormComponent,
+    EditComponent,
   ],
   exports: [  
     ConfirmDialogComponent  
