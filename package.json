@@ -2,10 +2,10 @@
   "name": "contact-information",
     "repository": {
     "type": "git",
-    "url": "https://github.com/elvisjs/calling-elvis"
+    "url": "https://github.com/mdsiafi/phonebook"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/elvisjs"
+    "registry": "https://npm.pkg.github.com/mdsiafi"
   },
   "version": "0.0.0",
   "scripts": {
