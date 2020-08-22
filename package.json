@@ -1,5 +1,12 @@
 {
   "name": "contact-information",
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/elvisjs/calling-elvis"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/elvisjs"
+  },
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
