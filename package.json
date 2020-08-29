@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "contact-information",
 "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "version": "0.0.0",
   "scripts": {
