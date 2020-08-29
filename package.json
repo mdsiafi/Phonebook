@@ -1,6 +1,6 @@
 {
-  "name": "contact-information",
-"publishConfig": { "registry": "https://npm.pkg.github.com/contact-information" },
+  "name": "",
+"publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
